@@ -1,0 +1,1445 @@
+
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<title>HDDS Questionnaire</title>
+		<meta name="author" content="Neartail.com" />
+		<meta name="generator" content="Neartail" />
+		<meta name="description" content="HDDS Questionnaire" />
+		<meta property="keywords" content="HDDS Questionnaire" />
+		
+		<meta property="og:title" content="HDDS Questionnaire" />
+		<meta property="og:description" content="HDDS Questionnaire" />
+		<meta property="og:image" content="https://cdn.neartail.com/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/1698754255264/logo/1698754254905.webp" />
+		<meta property="og:url" content="https://near.tl/household-dd" />
+		
+			<link id="/css/tailwind/output.css" rel="stylesheet" href="https://formfacade.com/css/tailwind/output.css?nocache=42"/>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		
+		<link rel="icon" href="https://cdn.neartail.com/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/1698754255264/logo/1698754254905.webp" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="https://cdn.neartail.com/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/1698754255264/logo/1698754254905.webp" />
+	    <link rel="stylesheet" href="/css/tailwind.css?_=32" />
+	    <link rel="stylesheet" href="/css/default.css?_=15" />
+		
+		
+			<!-- Only Available In Dev Mode and Editor Mode -->
+			<script defer src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/css/shepherd.css"/>
+			<script defer src="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/js/shepherd.min.js"></script>
+			<link rel="stylesheet" href="/js/utils/toastui-editor-all-3.2.0.min.css" />
+			<link 
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css"
+			/>
+		
+		
+		
+		
+		
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+		
+        
+        <style>
+			:root {
+			font-size: 16px !important;
+			
+				--ff-primary-50: #d3ecf4 !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-100: #c7e7f1 !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-200: #bae2ef !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-300: #acddec !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-400: #9cd8e9 !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-500: #8bd3e6 !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-600: #77cde3 !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-700: #71c2d7 !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-800: #6ab7cb !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-900: #64acbe !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-primary-950: #5c9fb0 !important;
+				--ff-paragraph-font: Inter !important;
+				--ff-heading-font: Inter !important;
+			
+				--ff-bgcolor: #ffffff;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+        </style>
+	</head>
+	
+
+	<body 
+		style="display: grid; grid-template-rows: 1fr auto; min-height: 100%;font-family: var(--ff-font);" 
+		class="bg-white sm:bg-gray-100 antialiased font-sans"
+	>
+		<header style="z-index: 1;" class="bg-white shadow border-b border-gray-200 fixed z-1 top-0 w-full">
+			  <div class="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
+				<div class="relative flex justify-between h-20 items-center">
+				  <div>
+					<a href="/household-dd/index.html" class="flex flex-shrink-0 items-center">
+                        <div class="flex-shrink-0">
+                            
+                                <img class="h-12 w-12 rounded-full" src="https://cdn.neartail.com/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/1698754255264/logo/1698754254905.webp" alt="HDDS Questionnaire">
+                            
+                        </div>
+						<span class="ml-1 md:ml-2 text-sm xs:text-sm sm:text-base md:text-xl  font-semibold text-gray-800">
+							HDDS Questionnaire
+						</span>
+					</a>
+				  </div>
+				  <div class="flex">
+					<div class="flex items-center justify-end px-0 py-4 md:mx-auto md:max-w-3xl md:space-x-6 lg:space-x-8 lg:mx-0 lg:max-w-none" id="mobile-menu-harmburger">
+                        
+                            <a id="index-menu" href="/household-dd/index.html"
+                                class="hidden lg:flex items-center justify-center whitespace-nowrap text-base h-full  border-b-2 border-white font-medium text-gray-900  border-b-indigo-800 hover:text-gray-700 header-menu">
+                                Home
+                            </a>
+						
+                            <a id="forums-menu" href="/household-dd/forums.html"
+                                class="hidden lg:flex items-center justify-center whitespace-nowrap text-base h-full  border-b-2 border-white font-medium text-gray-500 hover:text-gray-700 header-menu">
+                                Community
+                            </a>
+						
+                            <a id="about-menu" href="/household-dd/about.html"
+                                class="hidden lg:flex items-center justify-center whitespace-nowrap text-base h-full  border-b-2 border-white font-medium text-gray-500 hover:text-gray-700 header-menu">
+                                About
+                            </a>
+						
+                            <a id="contact-menu" href="/household-dd/contact.html"
+                                class="hidden lg:flex items-center justify-center whitespace-nowrap text-base h-full  border-b-2 border-white font-medium text-gray-500 hover:text-gray-700 header-menu">
+                                Contact
+                            </a>
+						
+						
+							
+								<a
+									href="/household-dd/main.html"
+									id="order-now-menu"
+									class="ml-4 md:ml-8 drop-shadow hover:drop-shadow-lg inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 bg-origin-border md:px-4 py-2 md:text-base font-medium text-white shadow-sm hover:bg-indigo-700 px-3 text-xs"
+								>
+									Order Now
+								</a>
+						
+						
+						<div class="lg:hidden flex items-center ml-4 md:mr-2">
+							<button class="outline-none mobile-menu-button" aria-label="mobile-menu-button">
+								<svg
+									class="w-6 h-6 text-gray-500"
+									x-show="!showMenu"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+								<path d="M4 6h16M4 12h16M4 18h16"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			<div class="hidden mobile-menu mb-4 lg:hidden">
+				<ul class="border-t-2 border-gray-200">
+					
+						<li class="border-b-2 border-gray-200">
+							<a href="/household-dd/index.html"
+								id="index-menu-mobile"
+								class="block text-sm px-2 py-4 text-center text-gray-900 font-semibold hover:text-gray-700">
+								Home
+							</a>
+						</li>
+					
+						<li class="border-b-2 border-gray-200">
+							<a href="/household-dd/forums.html"
+								id="forums-menu-mobile"
+								class="block text-sm px-2 py-4 text-center text-gray-500 hover:text-gray-700">
+								Community
+							</a>
+						</li>
+					
+						<li class="border-b-2 border-gray-200">
+							<a href="/household-dd/about.html"
+								id="about-menu-mobile"
+								class="block text-sm px-2 py-4 text-center text-gray-500 hover:text-gray-700">
+								About
+							</a>
+						</li>
+					
+						<li class="border-b-2 border-gray-200">
+							<a href="/household-dd/contact.html"
+								id="contact-menu-mobile"
+								class="block text-sm px-2 py-4 text-center text-gray-500 hover:text-gray-700">
+								Contact
+							</a>
+						</li>
+					
+				</ul>
+			</div>
+		  
+		</header>
+		<main class="mb-24 sm:mb-12">
+			
+
+<div class="relative mt-20 md:mt-28">
+  <div class="hidden">
+    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-28">
+      <span
+        class="w-full inline-flex flex-col rounded-lg bg-green-100 text-sm font-medium border border-green-200 text-green-800 p-4 shadow drop-shadow-sm">
+        Your changes have been saved successfully!
+        Will be reflected in a Live Portal in 30 minutes.
+        <div id="close-icon-popup">
+          <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 md:mt-8 lg:mt-8">
+    <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+      <div class="absolute inset-0">
+        
+          <img class="h-full w-full object-cover bg-indigo-50" src="https://cdn.neartail.com/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/1698754343677/banner/1698754343346.webp" alt="HDDS Questionnaire" />
+          <div class="absolute inset-0 bg-indigo-100 mix-blend-multiply"></div>
+        
+      </div>
+      <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+        <h1 class="text-center text-4xl font-bold font-heading tracking-tight sm:text-5xl lg:text-6xl">
+            <span class="block text-white">
+                HDDS Questionnaire
+            </span>
+        </h1>
+        
+        <div class="mx-auto mt-9 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+          
+            <div class="flex flex-col gap-3 justify-center items-center w-full md:w-96">
+              
+                <a
+                  href="/household-dd/form/household-dietary-diversity-score-hdds-questionnaire.1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w.html" 
+                  class="flex items-center justify-center rounded-md border-2 border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-800 shadow-sm hover:text-indigo-900 hover:font-semibold sm:px-6 hover:shadow-2xl w-full hover:border-2 hover:border-gray-200"
+                >
+                <span class="truncate">
+                  Household Dietary Diversity Score (HDDS) Questionnaire
+                </span>
+                </a>
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mx-auto max-w-7xl sm:px-6 lg:px-8 md:mt-8 mt-6">
+    
+      <section id="order-now" class="mx-auto max-w-7xl px-2 sm:pt-0 mb-32 sm:px-6 lg:px-8 sm:mt-12 bg-white rounded-md" style="padding-top: 20px; padding-bottom:20px;">
+        <div id="ff-compose">
+          <h3 class="mt-6 mb-96 text-lg font-medium text-gray-900 text-center w-full">
+            
+
+
+
+
+  <form dir="ltr" id="Publish1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w" 
+  class="ff-form ff-layout-2column ff-public-mode ff-text-left" method="POST" 
+  action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/formResponse">
+    <input type="hidden" name="id" value="1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w">
+    <input type="hidden" name="pageHistory" value="">
+    
+    
+    
+    <input type="hidden" id="Payment1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w" name="paymentId" value="">
+    <input type="hidden" id="PaymentData1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w" name="paymentData" value="">
+    <input type="hidden" id="Accepted1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w" name="accepted" value="">
+    <input type="hidden" id="AcceptedAt1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w" name="acceptedAt" value="">
+    
+    <div class="ff-section" id="ff-sec-root" 
+      style="display:block;">
+      
+      
+      <h3 class="ff-title" id="ff-title-root">
+        Household Dietary Diversity Score (HDDS) Questionnaire
+        
+      </h3>
+      
+        <div class="ff-description mdViewer" id="ff-desc-root">
+          <p><em>Household Dietary Diversity Score (HDDS) to measure diversity in Food Access:</em></p><p><br></p><p><br></p><p>Please enter the types of foods that you or anyone else in your household ate yesterday during the day and at night.</p><p><br></p><p><em>Read the list of foods. Place A </em><strong><em>One</em></strong><em> In The Box If Anyone In The Household Ate The Food In Question, Place A </em><strong><em>Zero</em></strong><em> In The Box If No One In The Household Ate The Food.</em></p>
+        </div>
+      
+    <div class="ff-secfields">
+    
+    
+      
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-63591206" >
+          
+            <label  class="ff-item-qs " for="Widget63591206">
+                
+                  (1) Any [insert any local foods, e.g. ugali, nshima], bread, rice noodles, biscuits, or any other foods made from millet, sorghum, maize, rice, wheat, or [insert any other locally available grain]?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static63591206" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.984913263" id="entry.984913263.1" 
+                      onclick="entr=984913263; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.984913263.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.984913263" id="entry.984913263.0" 
+                      onclick="entr=984913263; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.984913263.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error63591206" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-536532566" >
+          
+            <label  class="ff-item-qs " for="Widget536532566">
+                
+                  (2) Any potatoes, yams, manioc, cassava or any other foods made from roots or tubers?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static536532566" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1447738172" id="entry.1447738172.1" 
+                      onclick="entr=1447738172; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.1447738172.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1447738172" id="entry.1447738172.0" 
+                      onclick="entr=1447738172; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.1447738172.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error536532566" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-246913054" >
+          
+            <label  class="ff-item-qs " for="Widget246913054">
+                
+                  (3) Any vegetables?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static246913054" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1547740169" id="entry.1547740169.1" 
+                      onclick="entr=1547740169; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.1547740169.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1547740169" id="entry.1547740169.0" 
+                      onclick="entr=1547740169; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.1547740169.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error246913054" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-396657316" >
+          
+            <label  class="ff-item-qs " for="Widget396657316">
+                
+                  (4) Any fruits?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static396657316" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.887601999" id="entry.887601999.1" 
+                      onclick="entr=887601999; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.887601999.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.887601999" id="entry.887601999.0" 
+                      onclick="entr=887601999; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.887601999.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error396657316" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-74306624" >
+          
+            <label  class="ff-item-qs " for="Widget74306624">
+                
+                  (5) Any beef, pork, lamb, goat, rabbit wild game, chicken, duck, or other birds, liver, kidney, heart, or other organ meats?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static74306624" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1253993859" id="entry.1253993859.1" 
+                      onclick="entr=1253993859; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.1253993859.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1253993859" id="entry.1253993859.0" 
+                      onclick="entr=1253993859; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.1253993859.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error74306624" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-2056473401" >
+          
+            <label  class="ff-item-qs " for="Widget2056473401">
+                
+                  (6) Any eggs?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static2056473401" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.306244748" id="entry.306244748.1" 
+                      onclick="entr=306244748; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.306244748.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.306244748" id="entry.306244748.0" 
+                      onclick="entr=306244748; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.306244748.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error2056473401" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-1723556012" >
+          
+            <label  class="ff-item-qs " for="Widget1723556012">
+                
+                  (7) Any fresh or dried fish or shellfish?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static1723556012" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1403816713" id="entry.1403816713.1" 
+                      onclick="entr=1403816713; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.1403816713.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1403816713" id="entry.1403816713.0" 
+                      onclick="entr=1403816713; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.1403816713.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error1723556012" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-1386352539" >
+          
+            <label  class="ff-item-qs " for="Widget1386352539">
+                
+                  (8) Any foods made from beans, peas, lentils, or nuts?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static1386352539" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1727806880" id="entry.1727806880.1" 
+                      onclick="entr=1727806880; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.1727806880.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.1727806880" id="entry.1727806880.0" 
+                      onclick="entr=1727806880; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.1727806880.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error1386352539" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-725365809" >
+          
+            <label  class="ff-item-qs " for="Widget725365809">
+                
+                  (9) Any cheese, yogurt, milk or other milk products?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static725365809" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.895382737" id="entry.895382737.1" 
+                      onclick="entr=895382737; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.895382737.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.895382737" id="entry.895382737.0" 
+                      onclick="entr=895382737; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.895382737.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error725365809" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-2870674" >
+          
+            <label  class="ff-item-qs " for="Widget2870674">
+                
+                  (10) Any foods made with oil, fat, or butter?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static2870674" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.2115822691" id="entry.2115822691.1" 
+                      onclick="entr=2115822691; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.2115822691.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.2115822691" id="entry.2115822691.0" 
+                      onclick="entr=2115822691; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.2115822691.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error2870674" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-1187857377" >
+          
+            <label  class="ff-item-qs " for="Widget1187857377">
+                
+                  (11) Any sugar or honey?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static1187857377" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.724721615" id="entry.724721615.1" 
+                      onclick="entr=724721615; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.724721615.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.724721615" id="entry.724721615.0" 
+                      onclick="entr=724721615; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.724721615.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error1187857377" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd" id="ff-id-506435215" >
+          
+            <label  class="ff-item-qs " for="Widget506435215">
+                
+                  (12) Any other foods, such as condiments, coffee, tea?
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static506435215" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+            
+              <div class="ff-widget-control ff-check-table ">
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.133811678" id="entry.133811678.1" 
+                      onclick="entr=133811678; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="1" required>
+                    <label class="ff-form-check-label" for="entry.133811678.1">
+                      1
+                    </label>
+                  </div>
+                
+              
+                
+                  <div class="ff-form-check">
+                    <input class="ff-form-check-input" type="radio" name="entry.133811678" id="entry.133811678.0" 
+                      onclick="entr=133811678; if(formFacade.draft.entry[entr]==this.value){ delete formFacade.draft.entry[entr]; this.checked=false; formFacade.saveDraft(); }"
+                       value="0" required>
+                    <label class="ff-form-check-label" for="entry.133811678.0">
+                      0
+                    </label>
+                  </div>
+                
+              
+              </div>
+            
+          
+          
+          <div id="Error506435215" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-2126555751" >
+          
+            <label  class="ff-item-qs " for="Widget2126555751">
+                
+                  Total Score feed by the visitor
+                
+                
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static2126555751" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+              <input type="text" class="ff-widget-control ff-readonly rest-form-control" id="Display2126555751" value="" readonly >
+              <input type="hidden" id="Widget2126555751" name="entry.532545720" value="">
+            
+          
+          
+          <div id="Error2126555751" class="ff-widget-error"></div>
+        </div>
+      
+      
+    
+      
+        <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd" id="ff-id-447234470">
+          <h4 class="ff-section-header" id="ff-title-447234470">
+            Contact details
+            
+          </h4>
+          
+        </div>
+      
+      
+        <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-1402134933" >
+          
+            <label  class="ff-item-qs " for="Widget1402134933">
+                
+                  Name
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static1402134933" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+              <input type="text" class="ff-widget-control rest-form-control" id="Widget1402134933" name="entry.53366079"
+                
+            
+            
+            value="" placeholder="" required>
+          
+          
+          <div id="Error1402134933" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-1387419033" >
+          
+            <label  class="ff-item-qs " for="Widget1387419033">
+                
+                  Mail Address
+                
+                
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static1387419033" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+              <input type="text" class="ff-widget-control rest-form-control" id="Widget1387419033" name="entry.427327967"
+                
+            
+            
+            value="" placeholder="" >
+          
+          
+          <div id="Error1387419033" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-1335467672" >
+          
+            <label  class="ff-item-qs " for="Widget1335467672">
+                
+                  Place
+                
+                <span class="ff-required">*</span> 
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static1335467672" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+              <input type="text" class="ff-widget-control rest-form-control" id="Widget1335467672" name="entry.1098442528"
+                
+            
+            
+            value="" placeholder="" required>
+          
+          
+          <div id="Error1335467672" class="ff-widget-error"></div>
+        </div>
+      
+        <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-157921099" >
+          
+            <label  class="ff-item-qs " for="Widget157921099">
+                
+                  Phone Number
+                
+                
+                
+                
+                
+                
+                  <i  class="ff-editwidget material-icons">
+                    settings
+                  </i>
+                
+            </label>
+            
+              <small  id="Static157921099" class="ff-help-empty ff-help form-text mdViewer"></small>
+            
+            
+            
+          
+          
+            
+              <input type="text" class="ff-widget-control rest-form-control" id="Widget157921099" name="entry.1227233987"
+                
+            
+            
+            value="" placeholder="" >
+          
+          
+          <div id="Error157921099" class="ff-widget-error"></div>
+        </div>
+      
+      
+    
+      
+        <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd" id="ff-id-1856147176">
+          <h4 class="ff-section-header" id="ff-title-1856147176">
+            HDDS Form by Dr Rakesh Sarwal
+            
+          </h4>
+          
+            <div class="ff-description mdViewer" id="ff-desc-1856147176">
+              <p>Source:</p><p><em>1. https://inddex.nutrition.tuftd.edu/data4d/indicator/household-dietary/diversity</em></p><p><br></p><p><em>2. https://pdf.usaid.gov/pdf_docs/PNADD455.pdf</em></p><p><br></p><p>3. https://fao.org/nutrition/assessment/tools/household-dietary-diversity/en</p><p><br></p><div data-language="text" class="toastui-editor-ww-code-block"><pre><code>Credits - Technical assistant by Mr Sumit Kumar (cyberworldorganization@gmail.com)</code></pre></div><p><br></p>
+            </div>
+          
+        </div>
+      
+      
+      
+    
+    </div>
+
+    <div class="ff-button-bar">
+    
+    
+        <button type="button" class="rest-btn rest-btn-lg rest-btn-primary ff-submit" id="ff-submit-root" onclick="formFacade.submit(this.form, 'root')">
+          
+            <img src="https://formfacade.com/img/send.svg" class="ff-submit-icon"/>
+          
+          <span>
+            Submit 
+          </span>
+        </button>
+      
+    
+
+    
+    
+      
+        
+          <a href="https://neartail.com/order-form/create-order-form.html?product=order-form&utm_source=madewith&utm_medium=104815396735660636858&utm_campaign=1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w&plan=free&userId=104815396735660636858&by=Household%20Dietary%20Diversity%20Score%20(HDDS)%20Questionnaire" target="_blank" 
+            class="ff-powered-img" style="display:inline-block !important;"
+            title="Try it for Free">
+            
+              <img style="display:block !important;" src="https://formfacade.com/logo/madewith/neartail.svg" loading="lazy"/>
+            
+          </a>
+        
+      
+    
+    </div>
+    </div>
+
+    
+
+    
+
+    
+    <div class="ff-section" id="ff-sec-ending" style="display:none">
+    <div class="ff-secfields">
+      <h3 class="ff-title">Household Dietary Diversity Score (HDDS) Questionnaire</h3>
+      <p style="padding-bottom:80px;">Click Submit to finish.</p>
+    </div>
+    <div class="ff-button-bar">
+      <button type="button" class="rest-btn rest-btn-lg rest-btn-secondary ff-back" 
+        onclick="formFacade.gotoSection(this.form, 'root', 'back')">
+        <!-- arrow back SVG -->
+        <span class="material-icons">arrow_back</span>
+        <span>Back</span>
+      </button>
+      <button type="button" class="rest-btn rest-btn-lg rest-btn-primary ff-submit"
+        onclick="formFacade.submit(this.form, '-3')">
+        <!-- send SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="19" viewBox="0 -960 960 960" width="19"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg>
+        <span>Submit</span>
+      </button>
+    </div>
+    </div>
+
+  </form>
+
+
+
+
+<div id="ff-addprd-overlay" onclick="formFacade.closePopup()"></div>
+<div id="ff-addprd-popup" dir="ltr"></div>
+
+          </h3>
+        </div>
+        <script src="//formfacade.com/include/104815396735660636858/form/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/tailwind.js?div=ff-compose"></script>
+        <style is:global>
+            @media (min-width: 1220px){
+                #ff-compose .ff-form{ 
+                    /* max-width: 1220px !important;
+                    padding-left: 250px !important;
+                    padding-right: 250px !important; */
+                }
+            }
+            .ff-partial{ margin-bottom:12px; }
+        </style>
+      </section>
+    
+</div>
+
+<script>
+  const viewMoreHandler = () => {
+    document.querySelectorAll("#hiddenproduct").forEach((item) => {
+      item.classList.remove("hidden");
+    });
+    document.getElementById("viewMoreHandler").remove();
+  }
+</script>
+		</main>
+		
+			
+				<style>
+  .skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+  }
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 20%, 75%);
+    }
+    50% {
+      background-color: hsl(200, 20%, 85%);
+    }
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }
+  .skeleton-title {
+    width: 46%;
+    height: 22px;
+    margin-bottom: 7px;
+    border-radius: 0.25rem;
+  }
+  .skeleton-textarea {
+    width: 100%;
+    height: 125px;
+    margin-bottom: 15px;
+    border-radius: 0.25rem;
+  }
+</style>
+<div id="sidebar" style="display:none" class="relative z-10" role="dialog">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+    <div class="fixed inset-0 overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full md:pl-10">
+          <div class="pointer-events-auto w-screen max-w-md">
+            <div class="flex h-full flex-col divide-y divide-gray-200 bg-white shadow-xl">
+              <div class="flex min-h-0 flex-1 flex-col overflow-y-auto py-6">
+                <div class="px-4 sm:px-6">
+                  <div class="flex items-start justify-between">
+                    <h2 class="text-lg font-medium text-gray-900" id="slide-over-title">Edit page</h2>
+                    <div class="ml-3 flex h-7 items-center">
+                      <button type="button" onclick="sidebar.hide()"
+                        class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <span class="sr-only">Close panel</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <form id="sidebarpane" class="relative mt-6 flex-1 px-4 sm:px-6">
+                  <div class="w-full h-full" aria-hidden="true">
+                    <div class="skeleton skeleton-title"></div>
+                    <div class="skeleton skeleton-textarea"></div>
+                    <div class="skeleton skeleton-title"></div>
+                    <div class="skeleton skeleton-textarea"></div>
+                    <div class="skeleton skeleton-title"></div>
+                    <div class="skeleton skeleton-textarea"></div>
+                  </div>
+                </form>
+              </div>
+              <div class="flex flex-shrink-0 justify-end px-4 py-4">
+                <button type="button" onclick="sidebar.hide()"
+                    class="rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Cancel</button>
+                <button type="button" id="sidebar-save" onclick="sidebar.save('index')"
+                    class="ml-4 inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 items-center">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="sidebarminicontainer" class="fixed p-4" style="right:20px; bottom:20px;z-index: 1">
+  <button id="sidebarmini" type="button" onclick="sidebar.load('index')" 
+      class="flex drop-shadow-lg hover:drop-shadow-xl rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-2 w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+      </svg>
+      Edit page
+  </button>
+</div>
+
+
+<script>
+    function loadSidebar()
+    { 
+        // Replacing Less than characters with unicode to avoid XSS.
+        var owner = {"email":"sarwalr@gmail.com","uid":"104815396735660636858","masked":"sarw***@gmail.com","team":{"form":{"1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w":{"at":1698726582379,"creator":"neartail","description":"*Household Dietary Diversity Score (HDDS) to measure diversity in Food Access:*\n\n\u003cbr>\nPlease enter the types of foods that you or anyone else in your household ate yesterday during the day and at night.\n\n\u003cem>Read the list of foods. Place A **One** In The Box If Anyone In The Household Ate The Food In Question, Place A **Zero** In The Box If No One In The Household Ate The Food.\u003c/em>","form":"Questionnaire Format - Household Dietary Diversity Score (HDDS)","id":"1yg8B2zyFN_aTbiD36tc0jP_UHeWtaVA1O3gGzwbQJwA","title":"Household Dietary Diversity Score (HDDS) Questionnaire"},"1FAIpQLSf7gDSNkUx5FdPw68NyGgOLizHIDFX6x-G7ML23jvEqk4_AFA":{"at":1698740682511,"creator":"neartail","description":"\n\u003cem>Household Dietary Diversity Score (HDDS) for Measurement of Household Food Access: Indicator Guide for **India***\n\n***\n\n*In order to collect household dietary diversity data, the following questions should be added to the baseline and final surveys. As appropriate, locally available foods should be added into the food groups*\n\n***\n\n> Now would like to ask you about the types of foods that you or anyone else in your household ate yesterday during the day and at night.\n\n\n*READ THE LIST OF FOODS. PLACE A ONE IN THE BOX IF*\n*ANYONE IN THE HOUSEHOLD ATE THE FOOD IN QUESTION,*\n*PLACE A ZERO IN THE BOX IF NO ONE IN THE HOUSEHOLD ATE*\n*THE FOOD.*","form":"Grocery order form","id":"1Sh8n2DvgnxXDcWoswreXW9ltLuyc7oF3_9DbQfUKyP8","title":"Questionnaire Format - Household Dietary Diversity Score (HDDS)"}},"info":{"logo":"https://cdn.neartail.com/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/1698754255264/logo/1698754254905.webp","logoorg":"https://cdn.neartail.com/1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w/1698754255264/logoorg/1698754254905.webp","title":"HDDS Questionnaire"}}};
+        var params = {"perma":"household-dd","page":"index"};
+        var query = {};
+        var ctaText = "Order Now";
+        window.sidebar = new Sidebar(owner, params, query, ctaText);
+    }
+</script>
+<script defer src="https://unpkg.com/ejs@3.1.6/ejs.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.14.0/firebase-app-compat.min.js" integrity="sha512-460ujcJ8VGOlOdtJglsQkZf64FMW1Z/OmmVbCb3UQ9570cu+c61T/H6FWji7BPNl2J8k31TR8GC+NiIpc42nKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.14.0/firebase-auth-compat.min.js" integrity="sha512-PBKOB8oKtWlVLZ0y89xMB9107EHENQVoSLi0IvHXlRv7bKM2asLmQGTX/qJ8j+/oC8Yzk3EHnNlhULp4oFCoGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.14.0/firebase-database-compat.min.js" integrity="sha512-RCbeYJzFCneVE0PNgOREvUbtsqBF1g2eDUN1jheou5jCOBFco3pEVyyj/yEgQ9993CO4ndzdxgNINa7dtqzbxQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="/js/utils/toastui-editor-all-3.2.0.min.js?_=2" ></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+<script defer src="/js/editor/sidebar.js?_=3" onload="loadSidebar()"></script>
+
+			
+		
+		<footer class="bg-indigo-700 relative">
+		  <div class="mx-auto max-w-md overflow-hidden py-7 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 flex flex-col items-center">
+			
+			<div class="mt-5 font-medium text-white">
+				&copy; 2023. All Rights Reserved.
+			</div>
+			
+				<div class="mt-4 mb-5 flex flex-col items-center justify-center">
+					<a href="https://neartail.com/site-builder/create-ecommerce-website.html?product=site-builder&utm_source=madewith&utm_medium=104815396735660636858&utm_campaign=1FAIpQLSeU0yJJbS5xvCLSHkoqfAza53H9gFOuHNpH2Hfa4MahG8Se9w&userId=104815396735660636858&by=HDDS Questionnaire" target="_blank"
+						class="drop-shadow hover:drop-shadow-lg shadow-md inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-white bg-origin-border px-4 py-2 text-center hover:text-indigo-900 text-sm font-semibold hover:font-bold cursor-pointer hover:border-2 hover:shadow-lg w-max" style="color: #362359;">
+						<img alt="Made with Neartail Site Builder" src="/logo.png" class="h-7 w-7 mr-2">
+						Made With Neartail
+					</a>
+				</div>
+            
+		  </div>
+		</footer>
+		
+	</body>
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-Z7PSXQT6FY"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-Z7PSXQT6FY');
+    
+	// Mobile Menu
+	const btn = document.querySelector("button.mobile-menu-button");
+	const menu = document.querySelector(".mobile-menu");
+	if(btn) {
+		btn?.addEventListener("click", () => {
+			menu?.classList?.toggle("hidden");
+		});
+	}
+	function scrollToElement(selector, offset) {
+        const element = document.querySelector(selector);
+        if (element) {
+            const offsetTop = element.offsetTop - offset;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+	const cartButton = document.querySelector('#cart-menu');
+	if(cartButton) {
+		cartButton.addEventListener('click', () => {
+			const cartSection = document.getElementById("cart-section");
+			if(cartSection) {
+				cartSection.classList.add("block");
+				cartSection.classList.remove("hidden");
+			}
+		});
+	}
+	function closeCartSidebar() {
+		const cartSection = document.getElementById("cart-section");
+		if(cartSection) {
+			cartSection.classList.add("hidden");
+			cartSection.classList.remove("block");
+		}
+	}
+	</script>
+</html>
