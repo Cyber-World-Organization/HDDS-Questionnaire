@@ -1,0 +1,45 @@
+theme: minima
+---
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+.
+├── minima.scss
+└── minima
+    └── _syntax-highlighting.scss
+
+minima:
+  skin: dark
+
+
+header_pages:
+  - about.md
+  - portfolio.md
+
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+
+  disqus:
+    shortname: my_disqus_shortname
+
+
+minima:
+  social_links:
+    - platform: deviantart  # same as SVG filename.
+      user_url: "https://www.deviantart.com/john.doe"  # URL of profile page.
+      title:  My profile at DeviantArt.com  # Optional. Text displayed on hovering over link.
+
+show_excerpts: true
+
+
+
+author:
+  name: Sumit Kumar
+  email: "support@cyberworldorg.tech"
